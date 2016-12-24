@@ -257,24 +257,5 @@
 
 </script>
 
-<script>
-
-
-
-switch(window.location.protocol) {
-   case 'http:':
-   case 'https:':
-     //remote file over http or https
-      location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
-     break;
-   case 'file:':
-     //local file
-     break;
-   default: 
-     //some other protocol
-}
-</script>
-
-
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Computer Consultant | Mike Turco</title>
+<meta name="description" content="Get help with your computers, be that programming, troubleshooting, organization or planning. Mike Turco has twenty-five years computer consulting experience."/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -11,6 +12,19 @@
 
 <body class="w3-light-grey">
 
+<!-- accordian for services -->
+<script>  
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -19,16 +33,16 @@
   
     <!-- Left Column -->
 
-    <div class="w3-quarter">
+    <div class="w3-third">
     
     
     
       <!-- start menu -->
         <ul class="w3-navbar w3-border w3-light-grey">
           <li><a class="w3-teal" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Services</a></li>
-          <li><a href="services.html">Hire Mike</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Hire Mike</a></li>
         </ul>
         <br>
       <!-- end menu -->
@@ -37,61 +51,18 @@
         <div class="w3-display-container">
           <img src="i/mike-turco-hat.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 style="background:lightblue;padding:0 10px">Mike Turco</h2>
+            <span style="background:lightblue;padding:0 10px;font-size:18px;">Mike Turco</span>
           </div>
         </div>
         <div class="w3-container">
           
-          <h1 class="w3-text-grey w3-padding-tiny"><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-teal"></i>Business Computer Consultant</h1>
+          <h1 class="w3-text-grey w3-padding-tiny"><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Consultant</h1>
           
 
           <!-- p class="font11 nopadmarg"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Apple Valley, California</p -->
           <p class="font11"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:mike@miketurco.com">mike@miketurco.com</a></p>
           <p class="font11"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(310) 714-9669</p>
-          <!-- hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Benefits</b></p>
-          <p><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Brainstorming and ideation</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:75%">
-              <div class="w3-center w3-text-white">75%</div>
-            </div>
-          </div>
-          <p>Media</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:50%">
-              <div class="w3-center w3-text-white">50%</div>
-            </div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>About Mike Turco</b></p>
-          <p>Mike Turco brings in knowledge, experience, tools, resources, tactical and technical insight, analysis, strategy and planning. And he gets the job done.</p> 
-          <p>He has twenty years of business consulting experience in over fifty different industries.</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:25%"></div>
-          </div>
-          <br -->
+          <p class="font11"><i class="fa fa-facebook-square fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.facebook.com/MikeTurcoComputerConsulting/">Join me on facebook</a></p>
         </div>
       </div><br>
 
@@ -99,7 +70,7 @@
     </div>
 
     <!-- Right Column -->
-    <div class="w3-threequarter">
+    <div class="w3-twothird">
     
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-desktop fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Let's put your computers to work</h2>
@@ -110,89 +81,117 @@
 
           <p><strong>I'm a computer consultant</strong> and have been for 25 years. I will perfectly understand what you need your computer to do, based on our discussions.</p>
 
-          <h2 class="w3-text-grey w3-padding-16">Here's how can help.</h2>
+          <h3 class="w3-text-grey">Here's how can help</h3>
           <p>I will give you the best business software and systems advice I can. Specifically, I will lay out your options, 
-              tell you how effective each one is and inform you of all costs. You decide and I execute. Its that simple. 
+              tell you how effective each one is and inform you of all costs. You decide and I execute. It's that simple. 
               You're in control of all decisions as we put systems and software into place.</p>
 
           <p>You can go to any computer consultant for this kind of help. Then again, how many of them truly understand your 
               profession and specific business needs? I do. Give me a call for a free initial consultation.</p>
           
-
       </div></div>
-       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
 
+
+<!-- consulting services -->
+
+       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16" id="services"><i class="fa fa-gears fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Computer Consulting Services</h2>
         <div class="w3-container">         
 
-          <h3 class="w3-text-teal"><i class="fa fa-sort-alpha-asc fa-fw w3-margin-right"></i>Get organized on your computer</h3>
-                    
-          <p>Is it time to organize your business computer? Wouldn't it be nice if your files were in neat, hierarchical folders? 
-              It would be equally nice if your program icons were right in front of you all the time.</p>
+          <h3 class="w3-text-teal"><i class="fa fa-hand-o-right fa-fw w3-margin-right"></i>Expert Programming and Troubleshooting</h3>
+          <p>All manner of online/local documents, presentations, spreadsheets, databases and websites</p>
+
+          <h3 class="w3-text-teal"><i class="fa fa-ambulance fa-fw w3-margin-right"></i>Emergency Project Assistance</h3>
+          <p>Get help with last minute reports and presentations. Includes organging information from databases, spreadsheets, data cleanup, 
+          document formatting and more.</p>         
           
-          <p>Also, what about your contact list (or lists)? Likewise, there's your task list, important documents, spreadsheets and email. Moreover, 
-          there are your client files as well.</p>
+          <h3 class="w3-text-teal"><i class="fa fa-sort-alpha-asc fa-fw w3-margin-right"></i>Help getting organized on your computer</h3>
+          <p>Let's work together to put all your files in neat, hierarchical folders, organize your computer desktop and put your program 
+              icons where they're easy to find and use. We can also work on your contacts list, task list, important documents, spreadsheets and email.</p>
           
-          <h3 class="w3-text-teal"><i class="fa fa-bar-chart fa-fw w3-margin-right"></i>Sales Managment</h3>
-          
+          <h3 class="w3-text-teal"><i class="fa fa-bar-chart fa-fw w3-margin-right"></i>Wordpress website repair and optimization</h3>
           <p>Sales Management taking a sale from beginning to end is well thought out process with specific steps. A solid system can help you to 
               increase your close rate and more easily manage a large workload</p>  
               
+          <h3 class="w3-text-teal"><i class="fa fa-bar-chart fa-fw w3-margin-right"></i>Sales Managment</h3>
+            <p>Sales Management taking a sale from beginning to end is well thought out process with specific steps. A solid system can help you to 
+            increase your close rate and more easily manage a large workload</p>  
+
           <h3 class="w3-text-teal"><i class="fa fa-gears fa-fw w3-margin-right"></i>Business Process Management</h3>
           <p>Front-to-back business automation</p>
 
-          <h3 class="w3-text-teal"><i class="fa fa-hand-o-right fa-fw w3-margin-right"></i>Expert Programming, Troubleshooting and Project Assistance</h3>
-          <p>All manner of online/local documents, presenstations, spreadsheets, databases and websites</p>
+
+          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align w3-green">
+            Left aligned & full-width
+          </button>
+          <div id="Demo2" class="w3-accordion-content w3-container">
+            <p>Lorem ipsum...</p>
+          </div>
+
+<br><br>
 
 
-          
-          <h3 class="w3-text-teal"><i class="fa fa-sort-alpha-asc fa-fw w3-margin-right"></i>Emergency Project Assistance</h3>
-          <p>Help pulling together last minute reports and presentations.</p>         
-          
-          <h2>About Mike Turco</h2>
-          
-          <p>You're a businessman. Above all, you're good at running your business. Odds are you can't or don't want to setup, program and organize the computers yourself. 
-              At the same time, there are more things you need your computers to do so that you can grow your business.</p>
-          <h3>Here's how I can help</h3>
-          <p>I'm a computer consultant and have been for 25 years. I will perfectly understand what you need your computer to do, based on our discussions.</p>
-          <p>I will give you the best business software and systems advice I can. Specifically, I will lay out your options, tell you how effective each one 
-             is and inform you of all costs. You decide and I execute. Its that simple. You're in control of all decisions as we put systems and software into place.</p>
-          <p>You can go to any computer consultant for this kind of help. Then again, how many of them truly understand your profession and specific business needs? 
-              I do. Give me a call for a free initial consultation.</p>
+      </div>
+      </div>
+<!-- end consulting services -->
+
+<!-- about -->
+
+       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16" id="about"><i class="fa fa-gears fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Mike Turco</h2>
+        <div class="w3-container">         
+
+        <p>For twenty-five years, Mike Turco has helped numerous businesses, entrepreneurs, manufacturers, engineers, programmers, doctors, lawyers, 
+            scientists and consultants by providing solutions at all levels of business opportunities, issues and problems. He provides complete solutions, 
+            as well as effective solutions to pieces of larger issues.</p>
+        
+        <p>Mike has significant experience in more than 50 industries. Having earned a reputation as an exceptional consultant, he helps both local and 
+          out-of-state businesses maximize their efficiency and profitability on a regular basis. A few of the many significant contributions made to 
+          local businesses is the amount of creative synergy, enthusiasm and motivation for which he is so well known.</p>
+        
+        <p>As a noted public speaker, Mike has lectured, facilitated and taught classes throughout the U.S., Mexico and the Orient. His strong background 
+            in Public Relations, Advertising, Information Technology and Business Management contribute significantly to his abilities.</p>
+        
+        <p>Mike Turco successfully combines his classical business and technical education and training with outstanding corporate, small company and 
+          entrepreneurial experience. His varied background and experience has enabled him to develop key skills that apply to many kinds of businesses, 
+          including commercial, industrial and professional service firms. <!-- Repeatedly, these firms testify that he has combined all their efforts and ideas 
+          into a complete package, providing them guaranteed accomplishment. --></p>
+        
+        <h3>Capabilities Profile</h3>
+        
+        <p>Mike Turco's extensive experience with businesses like yours, brings you both the depth and breadth of skills, as well as the knowledge and experience 
+            needed to help you overcome obstacles and pursue challenging opportunities. Mike has thirty-five years of solid business experience as a successful 
+            business owner, including the past twenty as a consultant.</p>
+        
+        <p>Mike is well known throughout the Southern California business community, and often works with other Consultants and Consulting Firms on large projects. 
+            Mike is an influential member of many multifunctional teams.</p>
+        
+        <p>In addition to his ability to carry a project through from conceptualization to a finished product, Training, Coaching and Problem Solving skills are 
+            also available to supplement your internal efforts. Moreover, Mike Turco can take on projects in emergency situations, to personally ensure that you 
+            meet your critical requirements and deadlines.</p>
           <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Life Coaching</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Why this is different</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-bar-chart fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+
         </div>
       </div>
+<!-- end about -->
+
+
+<!-- contact -->
+
+
 
       <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16" id="contact"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Let's get started today</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+          <p>Give me a call or drop me a line. Let's find out whether the services I provide are the right match for your needs.</p>
+          
+          <h3 class="w3-text-teal"><b><i class="fa fa-phone fa-fw w3-margin-right"></i>Phone: (310) 714-9669</b></h3>
+          <h3 class="w3-text-teal"><b><i class="fa fa-envelope fa-fw w3-margin-right"></i>Email: <a href="mailto:mike@miketurco.com">mike@miketurco.com</a></b></h3>
+          <h3 class="w3-text-teal"><b><i class="fa fa-wpforms fa-fw w3-margin-right"></i>Use the <a href="https://goo.gl/forms/LE5UvFhNKSWu0Vcj1">online contact form</a></b></h3>
         </div>
       </div>
+
+<!-- end contact -->
 
     <!-- End Right Column -->
     </div>
@@ -211,8 +210,13 @@
   <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>
   <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>
   <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <!-- p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p -->
 </footer>
+
+
+
+
+
 
 </body>
 </html>

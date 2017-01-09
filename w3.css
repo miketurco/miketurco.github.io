@@ -27,8 +27,8 @@ legend{border:0;padding:0}pre,textarea{overflow:auto}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
 /* Was h1{font-size:36px} */
-h1{font-size: 15px;font-weight: bold !important}
-@media screen and (max-width:350px){h1{font-size: 8px;}}
+h1{font-size: 18px;font-weight: bold !important}
+/* this was my mod, don't need anymore @media screen and (max-width:350px){h1{font-size: 14px;}} */
 h2{font-size:30px}
 /* was h3{font-size:24px} */
 h3{font-size:18px}
@@ -351,3 +351,4 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 /* my stuff */
 .font11{font-size:1.1em}
 .nopadmarg{padding:0!important;margin:0!important}
+.pad-0-16{padding:0 16px!important}
